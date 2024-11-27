@@ -5,7 +5,7 @@ sequenceDiagram
     
     browser->>server: POST studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    Note right of browser: Form data sent as POST request
+    Note right of browser: Form data sent as POST request, server-side code adds the entry to notes
     server-->>browser: Redirect request to header's Location
     deactivate server    
     
