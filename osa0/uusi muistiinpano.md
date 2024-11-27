@@ -26,6 +26,8 @@ sequenceDiagram
     server-->>browser: JavaScript file
     deactivate server
 
+    Note right of browser: Executed JS code requests notes as raw JSON data
+
     browser->>server: GET studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: Raw notes data
